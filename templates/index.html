@@ -1,0 +1,9 @@
+<h1>Home</h1>
+{% for file in fileList %}
+<a href = "{{ url_for('text',name = file)}}">
+{{file}}
+</a>
+<br>
+{% endfor %}
+<br>
+<a href = "{{ url_for('call_upload') }}">Upload again</a>
